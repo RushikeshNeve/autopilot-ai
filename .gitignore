@@ -1,0 +1,32 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local databases and journals
+.data/
+*.db
+*.db-journal
+
+# Build / cache artifacts
+*.tsbuildinfo
+dist/
+build/
+
+# Logs
+*.log
+*.err

@@ -1,0 +1,19 @@
+Flow to test:
+
+1. Register or log in.
+2. Create a workspace like `Node.js Study Plan`.
+3. Upload `PDF-Guide-Node-Andrew-Mead-v3.pdf` into RAG.
+4. Create a goal under that workspace:
+   - "Learn Node.js backend development from the uploaded guide and turn it into a 4-week learning plan."
+5. Trigger planning finalization.
+6. Review:
+   - interpreted goal
+   - milestones
+   - tasks
+   - critique summary
+   - execution decisions
+7. Submit an execution job for `retrieve_knowledge` to ask:
+   - "What are the most important Node.js concepts from this document?"
+8. Watch the websocket progress events.
+9. Check the execution job status until it becomes `completed`.
+10. Confirm the returned answer includes source chunks from the uploaded PDF.
